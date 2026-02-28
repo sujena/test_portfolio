@@ -1,4 +1,5 @@
 import './App.css'
+import ParticleBackground from './ParticleBackground'
 
 const skills = [
   { name: "Graphic Designing", desc: "Visual communication, branding, and print design with 4+ years of experience" },
@@ -79,6 +80,7 @@ const education = [
 function App() {
   return (
     <div className="container">
+      <ParticleBackground />
       <section className="hero">
         <div className="hero-content">
           <h1>Hi, I'm <span>Sujena</span><br />Siddhi Bajracharya</h1>
