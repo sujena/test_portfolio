@@ -1,21 +1,16 @@
+import './App.css'
+
 const skills = [
-  "Graphic Designing",
-  "User Interface Design",
-  "Product Packaging",
-  "Logo & Brand Design",
-  "Photo/Video Editing",
-  "Illustrations"
+  { name: "Graphic Designing", desc: "Visual communication, branding, and print design with 4+ years of experience" },
+  { name: "User Interface Design", desc: "Creating intuitive and visually appealing digital interfaces" },
+  { name: "Product Packaging", desc: "End-to-end packaging design from concept to final production" },
+  { name: "Logo & Brand Design", desc: "Building memorable brand identities that resonate with audiences" },
+  { name: "Photo/Video Editing", desc: "Professional editing using Photoshop, Premiere Pro, After Effects" },
+  { name: "Illustrations", desc: "Custom illustrations for marketing and brand materials" }
 ];
 
 const tools = [
-  "Figma",
-  "Photoshop",
-  "Illustrator",
-  "Capcut",
-  "Indesign",
-  "Affinity",
-  "After Effect",
-  "Premier Pro"
+  "Figma", "Photoshop", "Illustrator", "Capcut", "Indesign", "Affinity", "After Effect", "Premier Pro"
 ];
 
 const experience = [
@@ -25,148 +20,174 @@ const experience = [
     period: "2024 - Present",
     type: "Remote",
     details: [
-      "Collaborated with research teams to design & format reports, case studies, and publications for drug-related initiatives",
-      "Integrated charts, tables, and diagrams to communicate complex data while maintaining brand standards"
+      "Collaborated with research teams to design reports, case studies, and publications",
+      "Integrated charts, tables, and diagrams to communicate complex data",
+      "Maintained strict adherence to brand standards"
     ]
   },
   {
     role: "Creative Lead",
     company: "Urza Creatives",
-    period: "June 2024 - December 2025",
-    type: "Co-Founder | Remote",
+    period: "June 2024 - Present",
+    type: "Co-Founder",
     details: [
-      "Developed complete brand identities from logo design to full brand guidelines",
-      "Shaped brand's visual online presence, built social media content pillars, and messaging strategy",
-      "Designed website interfaces that matched brand's look and feel",
-      "Produced marketing & brand assets such as social media creatives, reel contents, flyers & banners"
+      "Developed complete brand identities from logo to full brand guidelines",
+      "Shaped visual online presence and social media content strategy",
+      "Designed website interfaces improving user experience",
+      "Produced marketing assets: social media creatives, flyers, packaging"
     ]
   },
   {
     role: "UI Designer",
     company: "Deck of Designs",
-    period: "September 2023 - May 2024",
-    type: "Full-time | Onsite",
+    period: "Sept 2023 - May 2024",
+    type: "Full-time",
     details: [
       "Designed and delivered multiple website interfaces and branding elements",
-      "Leveraged AI tools like Firefly, MidJourney and Copilot to produce branding and UI assets",
-      "Assisted in guiding interns, providing support in design processes"
+      "Leveraged AI tools (Firefly, MidJourney, Copilot) for branding and UI",
+      "Mentored interns in design processes and best practices"
     ]
   },
   {
     role: "Graphic Designer",
     company: "Wood Basic",
     period: "March 2023 - May 2024",
-    type: "Part-time | Remote",
+    type: "Part-time",
     details: [
-      "Collaborated with marketing team & developed social media content",
-      "Designed product catalogs, website & other brand collaterals"
+      "Developed social media content maintaining consistent brand visuals",
+      "Designed product catalogs, websites, and brand collaterals"
     ]
   },
   {
     role: "Graphic Designer",
     company: "ACT360",
     period: "June 2021 - April 2023",
-    type: "Full-time | Onsite",
+    type: "Full-time",
     details: [
-      "Designed and delivered marketing materials, social media content, campaign collaterals",
-      "Created simple motion graphics/2D animations for clients including banks, KFC and Pizza Hut"
+      "Designed marketing materials and campaign collaterals",
+      "Created motion graphics/2D animations for banks, KFC, Pizza Hut"
     ]
   }
 ];
 
 const education = [
-  {
-    degree: "MBA Marketing & Advertising",
-    school: "Islington College",
-    period: "2025 - Present"
-  },
-  {
-    degree: "BSc. Computing (Hons.)",
-    school: "Islington College",
-    period: "2019 - 2021"
-  },
-  {
-    degree: "Graphic Designing Course",
-    school: "IT Training Nepal",
-    period: "2018"
-  }
+  { degree: "MBA Marketing & Advertising", school: "Islington College", period: "2025 - Present" },
+  { degree: "BSc. Computing (Hons.)", school: "Islington College", period: "2019 - 2021" },
+  { degree: "Graphic Designing Course", school: "IT Training Nepal", period: "2018" }
 ];
 
 function App() {
   return (
     <div className="container">
-      <header className="header">
-        <h1>Sujena Siddhi Bajracharya</h1>
-        <p className="tagline">
-          Designer by background with 4+ years of experience working closely with clients, 
-          cross-functional teams, and timelines. I've found my strongest skill isn't just 
-          design execution, but structuring work, planning processes, and driving projects forward.
-        </p>
-        <p className="tagline">
-          This interest in strategy, coordination, and problem-solving is what's led me to 
-          pursue an Assistant Project Manager role, where I can combine my creative understanding 
-          with strong organisational and communication skills to support projects end-to-end.
-        </p>
-        <div className="contact-info">
-          <a href="mailto:sujenasb@gmail.com">sujenasb@gmail.com</a>
-          <span>•</span>
-          <span>+977-9860125366</span>
-          <span>•</span>
-          <span>Kathmandu, Nepal</span>
+      <section className="hero">
+        <div className="hero-content">
+          <h1>Hi, I'm <span>Sujena</span><br />Siddhi Bajracharya</h1>
+          <p className="hero-subtitle">
+            A designer by background with 4+ years of experience working closely with clients and cross-functional teams. 
+            I specialize in structuring work, planning processes, and driving projects from concept to delivery.
+          </p>
+          <div className="hero-contact">
+            <a href="mailto:sujenasb@gmail.com">✉ sujenasb@gmail.com</a>
+            <span className="divider">|</span>
+            <span>📍 Kathmandu, Nepal</span>
+            <span className="divider">|</span>
+            <a href="https://behance.net/sujena" target="_blank" rel="noopener noreferrer">
+              behance.net/sujena ↗
+            </a>
+          </div>
         </div>
-        <a href="https://behance.net/sujena" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-          behance.net/sujena
-        </a>
-      </header>
-
-      <section className="section">
-        <h2>Industry Knowledge</h2>
-        <div className="tags">
-          {skills.map(skill => (
-            <span key={skill} className="tag">{skill}</span>
-          ))}
-        </div>
+        <div className="scroll-indicator">Scroll</div>
       </section>
 
       <section className="section">
-        <h2>Tools & Technologies</h2>
-        <div className="tags">
-          {tools.map(tool => (
-            <span key={tool} className="tag">{tool}</span>
-          ))}
+        <div className="section-header">
+          <span className="section-number">01</span>
+          <h2 className="section-title">What I Do</h2>
         </div>
-      </section>
-
-      <section className="section">
-        <h2>Experience</h2>
-        {experience.map((exp, index) => (
-          <div key={index} className="experience-item">
-            <div className="experience-header">
-              <h3>{exp.role}</h3>
-              <span className="period">{exp.period}</span>
+        <div className="skills-grid">
+          {skills.map((skill, i) => (
+            <div key={i} className="skill-card">
+              <h3>{skill.name}</h3>
+              <p>{skill.desc}</p>
             </div>
-            <p className="company">{exp.company} | {exp.type}</p>
-            <ul>
-              {exp.details.map((detail, i) => (
-                <li key={i}>{detail}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
 
       <section className="section">
-        <h2>Education</h2>
-        {education.map((edu, index) => (
-          <div key={index} className="education-item">
-            <h3>{edu.degree}</h3>
-            <p>{edu.school} | {edu.period}</p>
-          </div>
-        ))}
+        <div className="section-header">
+          <span className="section-number">02</span>
+          <h2 className="section-title">Tools</h2>
+        </div>
+        <div className="tools-grid">
+          {tools.map((tool, i) => (
+            <span key={i} className="tool-tag">{tool}</span>
+          ))}
+        </div>
       </section>
 
-      <footer className="footer">
-        <a href="mailto:sujenasb@gmail.com">Get in touch</a>
+      <section className="section">
+        <div className="section-header">
+          <span className="section-number">03</span>
+          <h2 className="section-title">Experience</h2>
+        </div>
+        <div className="experience-timeline">
+          {experience.map((exp, i) => (
+            <div key={i} className="experience-item">
+              <div className="experience-header">
+                <h3 className="experience-role">{exp.role}</h3>
+                <div className="experience-meta">
+                  <span className="experience-company">{exp.company}</span>
+                  <span>•</span>
+                  <span>{exp.period}</span>
+                  <span>•</span>
+                  <span>{exp.type}</span>
+                </div>
+              </div>
+              <ul className="experience-details">
+                {exp.details.map((detail, j) => (
+                  <li key={j}>{detail}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-header">
+          <span className="section-number">04</span>
+          <h2 className="section-title">Education</h2>
+        </div>
+        <div className="education-grid">
+          {education.map((edu, i) => (
+            <div key={i} className="education-card">
+              <h3>{edu.degree}</h3>
+              <p>{edu.school}</p>
+              <span className="education-period">{edu.period}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="cta-section">
+        <div className="cta-content">
+          <h2>Let's create something together</h2>
+          <p>I'm currently available for freelance work and full-time opportunities.</p>
+          <a href="mailto:sujenasb@gmail.com" className="cta-button">
+            Get in touch →
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <div className="footer-content">
+          <p>© 2025 Sujena Siddhi Bajracharya</p>
+          <div className="social-links">
+            <a href="mailto:sujenasb@gmail.com">Email</a>
+            <a href="https://behance.net/sujena" target="_blank" rel="noopener noreferrer">Behance</a>
+          </div>
+        </div>
       </footer>
     </div>
   )
